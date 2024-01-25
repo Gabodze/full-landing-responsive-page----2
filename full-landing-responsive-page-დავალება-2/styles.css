@@ -1,0 +1,2790 @@
+@font-face {
+    font-family:Montserrat400;
+    src: url(./Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family:Montserrat500;
+    src: url(./Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family:Montserrat600;
+    src: url(./Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family:Montserrat700;
+    src: url(./Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family:Montserrat800;
+    src: url(./Montserrat/Montserrat-ExtraBold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: url(./assets/unsplash_SfDofjXtxHE.png);
+
+}
+
+header{
+    padding-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between ;
+}
+
+.logo{
+    width: 251px;
+    height: 39px;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:white ;
+    margin: 0;
+}
+
+.logoline{
+    margin: 0;
+    margin-top: 5px;
+    width: 100px;
+    border-radius: 3px;
+    border: 3px solid rgba(23, 194, 236, 1)
+}
+
+nav {
+    width: 498px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+nav a {
+    font-family: Montserrat500;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+
+}
+
+nav .active{
+    color: white;
+}
+
+nav .active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: rgba(23, 194, 236, 1);
+    bottom: 0;
+    left: 50%;
+}
+
+.check{
+    width: 219px;
+    height: 69px;
+    padding: 20px 26px 20px 26px;
+    border-radius: 20px;
+    gap: 10px;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    text-align: left;
+    background-color: rgba(196, 196, 196, 0.1);
+    color: rgba(23, 194, 236, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.menuIconDiv{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgba(196, 196, 196, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.menuIcon{
+    width: 30px;
+    height: 30px;
+}
+
+/* content */
+.landContent{
+    margin-top: 117px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.smallheader{
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(23, 194, 236, 1);
+
+}
+
+.bigheader{
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: Montserrat800;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.vaccination{
+    color: rgba(23, 194, 236, 1);
+}
+
+.descp{
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.buttonsDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.activebutt, .defaultbutt{
+    padding: 20px 25px;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.activebutt{
+    background-color:rgba(23, 194, 236, 1) ;
+}
+
+.defaultbutt{
+    background-color:rgba(196, 196, 196, 0.1) ;
+}
+
+
+/* schedule content */
+.locationDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    justify-content: left;
+}
+
+.schedule{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.iconDiv{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(196, 196, 196, 0.1);
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.schedulespan{
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+
+.locDate{
+    width: 100%;
+    height: 160px;
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(196, 196, 196, 0.05);
+    display: flex;
+    align-items: end;
+
+}
+
+
+.insideLocDate{ 
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgba(196, 196, 196, 0.1);    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+
+
+.locationdesc{
+    display: flex;
+    flex-direction: column;
+}
+
+.locspan{
+    font-family: Montserrat600;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.locationplace{
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.submit{
+    width: 142px;
+    height: 69px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 20px;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    border: none;
+    background-color: rgba(23, 194, 236, 1);
+}
+
+.sponsors{
+    width: 100%;
+    height: 150px;
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    align-items: center; 
+    opacity: 0.5;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.sponsor1{
+    height: 66px;
+}
+
+.sponsor2{
+    height: 118px;
+}
+
+.sponsor3{
+    height: 82px;
+}
+
+.sponsor4{
+    height: 58px;
+}
+
+
+.sponsorslogos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+   
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+/* results */
+.results{ 
+    padding-top: 63px;
+    width: 100%;
+    height: 466px;
+    background-size: cover;
+    background-image: url(./assets/unsplash_SfDofjXtxH23E.png);
+}
+
+.resultCheck{
+    height: 340px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 20px;
+    background-color: rgba(196, 196, 196, 0.1);
+}
+
+.checkCovid{
+    height: 101px;
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(196, 196, 196, 0.05);
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 93px;
+}
+
+form{
+    margin-top: 35px;
+    padding-left: 93px;
+    padding-right: 93px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+input{
+    width: 450px;
+    height: 69px;
+    border-radius: 20px;  
+    border: none;
+    padding: 20px 25px;
+    font-family: Montserrat500;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+}
+
+.activeinput{
+    border: 3px solid rgba(23, 194, 236, 1);
+}
+
+.activeinput::placeholder{
+    color: white;
+}
+
+.defaultinput{
+    border: 3px solid rgba(196, 196, 196, 0.15)
+}
+
+.defaultinput::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.checkbutton{
+    width: 173px;
+    height: 69px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    border: 3px solid rgba(23, 194, 236, 1);
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(23, 194, 236, 1);
+
+}
+.descbr{
+    display: none;
+}
+
+.certificate{
+    margin-top: 35px;
+    margin-left: 93px;
+    margin-right: 93px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgba(196, 196, 196, 0.05);
+    color: rgba(23, 194, 236, 1);
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificatepp>a{
+    color: rgba(23, 194, 236, 1);
+    font-family: Montserrat700;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12.2px;
+    letter-spacing: 0em;
+    text-decoration: underline;
+}
+
+
+
+/* why get */
+.whyget{
+    width: 100%;
+    height: 795px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-size: cover;
+    background-image: url(./assets/unsplash_SfDofjXtxHE\ \(1\).png);
+}
+
+.titlesDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 58px;
+}
+
+.vaccinated{
+    font-family: Montserrat700;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    margin: 0;
+
+}
+
+.magna{
+    margin: 0;
+    width: 537px;
+    height: 72px;
+    font-family: Montserrat400;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.boxDivs{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.box1{
+    width: 450px;
+    height: 499px;
+    padding-top: 40px;
+    padding-left: 40px;
+    border-radius: 50px 150px 50px 50px;
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+.bigicon{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: rgba(196, 196, 196, 0.1);
+}
+
+.bigIconImage{
+    width: 70px;
+    height: 70px;
+}
+
+.protect{
+    margin: 0;
+    margin-top: 40px;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(23, 194, 236, 1);
+}
+
+.velit{
+    margin: 0;
+    margin-top: 30px;
+    font-family: Montserrat500;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.read{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    font-family: Montserrat700;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(23, 194, 236, 1);
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    margin-top: 40px;
+}
+
+
+.box23{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 40px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.medicon{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(196, 196, 196, 0.1);
+}
+
+
+.medIconImage{
+    width: 50px;
+    height: 50px;
+}
+
+.medHeader{
+    margin: 0;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 53px;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+
+}
+
+.readGrey{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    font-family: Montserrat700;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+
+/* getVaccine */
+.getVaccine{
+    padding: 40px 70px;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(./assets/unsplash_Y4MKctPwIrw.png);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.formDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.getYour{
+    margin: 0;
+    width: 452px;
+    height: 118px;
+    font-family: Montserrat700;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.secondForm{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.secondlabel{
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+.mobileLabel{
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.secondInput{
+    width: 650px;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(11, 21, 60, 0.15);
+} 
+
+.mobinpdiv{
+    width: 400px;
+    height: 70px;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    padding: 15px 30px;
+    align-items: center;
+    background-color: rgba(11, 21, 60, 0.15);
+}
+
+.mobileInput{
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+} 
+
+.mobinpdiv> .flag{
+    width: 40px;
+    height: 40px;
+}
+
+.mobinpdiv> .down{
+    width: 24px;
+    height:24px;
+}
+
+.mobinpdiv> .line{
+    height: 40px;
+    rotate: -90 deg;
+}
+
+
+
+.secondInput::placeholder{
+    font-family: Montserrat500;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.inputnumberDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+
+.getVaccinep{
+    margin: 0;
+    width: 654px;
+    height: 48px;
+    font-family: Montserrat500;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.verify{
+    width: 214px;
+    height: 69px;
+    padding: 20px 70px 20px 70px;
+    border-radius: 20px;
+    gap: 10px;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: none;
+    color: white;
+    background-color: rgba(23, 194, 236, 1);
+}
+
+.submitButton{
+    width: 650px;
+    height:  69px;
+    margin-top: 20px;
+    padding: 20px 279px 20px 279px;
+    border-radius: 20px;
+    gap: 10px;
+    border: none;
+    color: white;
+    background-color: rgba(23, 194, 236, 1);
+}
+
+.alreadyReg{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+    justify-content:  center;
+}
+
+.already{
+    font-family: Montserrat600;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.checkstatus{
+    font-family: Montserrat700;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(23, 194, 236, 1);
+
+}
+
+.vaccineImg{
+    width: 401px;
+    height: 575px;
+}
+
+.covid{
+    overflow: hidden;
+    width: 100%;
+    height: 981px;
+    background-size: cover;
+    background-image: url(./assets/unsplash_SfDofjXtxHE.png);
+}
+
+.prevention{
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    color: white;
+    padding-top: 67px;
+
+}
+
+.bigCovid{
+    margin: 0;
+    font-family: Montserrat800;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.bigCovid>span{
+    color: rgba(23, 194, 236, 1);
+}
+
+.covidp{
+    margin: 0;
+    margin: auto;
+    margin-top: 40px;
+    width: 953px;
+    height: 58px;
+    font-family: Montserrat500;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.human{
+    margin: auto;
+    margin-top: 179px;
+    width: 709px;
+    height: 530px;
+   
+}
+
+.humanDiv{
+    position: relative;
+    display: flex; 
+}
+
+
+.coronabox1{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.coronaImg{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -20px;
+    top: -12px;
+}
+
+.virusDiv1{
+    position: relative;
+    margin-top: 213px;
+    margin-left: 192px;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-radius: 10px;
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+.virusspan1{
+    margin-right: 61px;
+    font-family: Montserrat600;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(23, 194, 236, 1);
+
+}
+
+.virusDiv2{
+    position: relative;
+    margin-top: 213px;
+    margin-right: 136px;
+    width: 363px;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-radius: 10px;
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+.virusspan2{
+    margin-right: 33px;
+    font-family: Montserrat600;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(23, 194, 236, 1);
+
+}
+.coronabox2{
+    margin-top: 396px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coronabox3{
+    margin-top: 577px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.virusDiv3{
+    position: relative;
+    margin-left: 92px;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-radius: 10px;
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+.virusspan3{
+    margin-right: 18px;
+    font-family: Montserrat600;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(23, 194, 236, 1);
+
+}
+
+.virusDiv4{
+    position: relative;
+    margin-right: 81px;
+    width: 327px;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-radius: 10px;
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+.virusspan4{
+    margin-right: 20px;
+    font-family: Montserrat600;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(23, 194, 236, 1);
+
+}
+
+
+
+
+.virusDiv5{
+    position: relative;
+    margin-left: 42px;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-radius: 10px;
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+
+.virusspan5{
+    margin-right: 63px;
+    font-family: Montserrat600;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(23, 194, 236, 1);
+
+}
+
+.virusDiv6{
+    position: relative;
+    margin-right: 46px;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-radius: 10px;
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+.virusspan6{
+    margin-right: 57px;
+    font-family: Montserrat600;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(23, 194, 236, 1);
+
+}
+
+/* feedback */
+.feedback{
+    width: 100%;
+    height: 934px;
+    background-size: cover;
+    background-image: url(./assets/unsplash_Y4MKctPwIrw.png);   
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.feedbackh{
+    margin: 0;
+    padding-top: 57px;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(23, 194, 236, 1);
+}
+
+.patient{
+    font-family: Montserrat800;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.patientThink{
+    margin: 0;
+    margin: auto;
+    margin-top: 40px;
+    width: 953px;
+    height: 58px;
+    font-family: Montserrat500;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.imgsDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-left: 128px;
+    margin-right: 128px;
+}
+
+.imgsDiv>img{
+    width: 294px;
+    height: 479px;
+}
+
+.userDivs{
+    width: 100%;
+    position: absolute;
+    top: 363px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+     padding-left: 70px;
+    padding-right:70px ;
+}
+
+.userDiv1{
+    padding: 37px 33px;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgba(196, 196, 196, 0.5);
+}
+.userDiv2{
+    padding: 37px 17px;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgba(23, 194, 236, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.userimgDig{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.userimgDig>img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+
+.nameDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nameheader{
+    margin: 0;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.locationFrom{
+    margin: 0;
+    font-family: Montserrat700;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);   
+}
+
+.userComment{
+    margin: 0;
+    margin-top: 40px;
+    font-family: Montserrat500;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nameheader2{
+    margin: 0;
+    font-family: Montserrat700;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+
+.locationFrom2{
+    margin: 0;
+    font-family: Montserrat700;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(255, 255, 255, 0.75);   
+}
+
+.userComment2{
+    margin: 0;
+    margin-top: 40px;
+    font-family: Montserrat500;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.75);
+}
+
+
+.userComment>span{
+    color: rgba(23, 194, 236, 1);
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+.footerbgimg{    
+    justify-content: center;    
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-image: url(./assets/7unsplash_SfDofjXtxHE\ \(2\).png);
+
+}
+
+
+.quote{   
+    width: 1067px;
+    height: 435px;
+    position: absolute;
+    margin: auto;
+    display: flex;
+    padding: 18px;
+    margin-top: -215px;
+    border-radius: 50px;
+    background-color:rgba(196, 196, 196, 0.15);
+}
+
+.insidequote{
+    width: 1031px;
+    height: 400px;
+    background-color: rgba(23, 194, 236, 1);
+    border-radius: 50px;
+}
+
+.quoteheader{
+    margin: 0;
+    margin-top: 70px;
+    font-family: Montserrat700;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.quoteP{
+    font-family: Montserrat500;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.inputquote{
+    width: 549px;
+    height: 75px;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quoteinp{
+    width: 450px;
+    height: 75px;
+    text-align: left;
+    padding: 28.5px 40px;
+    margin: 0;
+    outline: none;
+    border-radius: 30px 0 0 30px;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    font-family: Montserrat500;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.25);
+
+}
+
+.quoteicon{
+    width: 100px;
+    height: 75px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 30px 30px 0;
+    background-color: rgba(11, 21, 60, 1);
+}
+
+.quoteicon>img{
+    width: 40px;
+    height: 40px;
+}
+
+
+.footerContent{
+    position: absolute;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 100%;
+    margin-top: 328px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .active2{
+    color: white;
+}
+
+.socmedia{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.socmedia>img{
+    width: 50px;
+    height: 50px;
+}
+
+
+@media screen and (max-width: 750px) {
+
+    main{
+        background-image: url(./assets/esnsplash_SfDofjXtxHE\ \(3\).png);
+    }
+
+
+
+    header{
+        padding-top: 50px;
+        margin-left: 35px;
+        margin-right: 35px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between ;
+    }
+
+    .logo{
+        width: 200px;
+        height: 21px;
+        font-family: Montserrat700;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+
+    .logoline{
+        border: 2px solid rgba(23, 194, 236, 1);
+        width: 80px;
+        margin-top: 10px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    
+    .check{
+        display: none;
+    }
+
+    .menuIconDiv{
+        display: flex;
+    }
+
+    /* content */
+    .landContent{
+        margin-top: 32px;
+        margin-left: 35px;
+        margin-right: 35px;
+        display: flex;        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .smallheader{
+        margin-bottom: 0;
+        font-family: Montserrat700;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .bigheader{
+        margin-bottom: 0;
+        font-family: Montserrat800;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .descp{
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .buttonsDiv{
+        margin-top: 20px;
+    }
+    
+    .activebutt, .defaultbutt{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .landContent>img{
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+        width: 306px;
+        height: 309px;
+        
+    }
+
+
+
+
+
+    .locationDiv{
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 20px;
+    }
+
+    .schedule{
+        gap: 10px;
+        align-items: end;
+    }
+
+    .iconDiv{
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    .schedulespan{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .locDate{
+        width: 100%;
+        height: 242px;
+        display: flex;
+
+    }
+
+    .insideLocDate{ 
+        width: 100%;
+        height: 231px;
+        border-radius: 20px 20px 0px 0px;
+        padding: 20px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .location{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .locspan{
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .locationplace{
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .submit{
+        height: 50px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    .sponsors{
+        width: 100%;
+        height: 40px;
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;        
+        opacity: 0.5;
+        justify-content: space-between;
+        background-color:rgba(255, 255, 255, 0.5);
+    }
+
+
+    .sponsor1{
+        height: 16px;
+    }
+
+    .sponsor2{
+        height: 30px;
+    }
+
+    .sponsor3{
+        height: 21px;
+    }
+
+    .sponsor4{
+        height: 15px;
+    }
+
+
+    .sponsorslogos{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    /* results */
+    .results{ 
+        padding-top: 84px;
+        width: 100%;
+        height: 497px;
+        background-size: cover;
+        background-image: url(./assets/2unsplash_SfDofjXtxHE.png);
+    }
+
+    
+
+    .resultCheck{
+        height: 381px;
+        margin-left: 35px;
+        margin-right: 35px;
+        border-radius: 20px;
+        background-color: rgba(196, 196, 196, 0.1);
+    }
+
+    .checkCovid{
+        height: 40px;
+        border-radius: 10px 10px 0 0;
+        background-color: rgba(196, 196, 196, 0.05);
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .checkYourCovid{
+        font-size: 10px;
+        line-height: 12.2px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    form{
+        margin-top: 21px;
+        padding-left: 13px;
+        padding-right: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input{
+        width: auto;
+        height: 50px;
+        border-radius: 10px;  
+        border: none;
+        padding: 16px 18px;
+        font-family: Montserrat500;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        background-color: transparent;
+    }
+
+    .checkbutton{
+        width: 150px;
+        height: 50px;
+        padding: 20px 25px 20px 25px;
+        border-radius: 10px;
+        border: none;
+        background-color: transparent;
+        border: 3px solid rgba(23, 194, 236, 1);
+        font-family: Montserrat700;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(23, 194, 236, 1);
+    
+    }
+    
+    .certificate{
+        margin-top: 48px;
+        margin-left: 13px;
+        margin-right: 13px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: rgba(196, 196, 196, 0.05);
+        color: rgba(23, 194, 236, 1);
+        font-family: Montserrat700;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12.2px;
+        letter-spacing: 0em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descbr{
+        display: block;
+    }
+        
+    .certificatepp>a{
+        color: rgba(23, 194, 236, 1);
+        font-family: Montserrat700;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12.2px;
+        letter-spacing: 0em;
+        text-decoration: underline;
+    }
+
+
+    /* why get */
+    .whyget{
+        width: 100%;
+        height: 1026px;
+        padding-top: 42px;
+        padding-left: 35px;
+        padding-right: 0;
+        background-size: cover;
+        background-image: url(./assets/3nsplash_SfDofjXtxHE.png);    
+    }
+
+    .titlesDiv{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        justify-content: space-between;
+    }
+    
+    
+    .vaccinated{
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .magna{
+        width: auto;
+        height: 85px;
+        margin-right: 40px;
+        font-family: Montserrat400;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.5);
+    
+    }
+
+    .boxDivs{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    
+    .box1{
+        width: 276px;
+        height: 280px;
+        padding-top: 20px;
+        padding-left: 20px;
+        border-radius: 20px 80px 20px 20px;
+        background-color: rgba(196, 196, 196, 0.2);
+    }
+
+    
+    .bigicon{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: rgba(196, 196, 196, 0.1);
+    }
+
+    .bigIconImage{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .protect{
+        width: 172px;
+        margin: 0;
+        margin-top: 20px;
+        font-family: Montserrat700;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(23, 194, 236, 1);
+    }
+
+    .velit{
+        margin: 0;
+        margin-top: 20px;
+        font-family: Montserrat500;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .read{
+        margin: 0;
+        margin-top: 25px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .read > img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .box23{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 20px;
+        width: 188px;
+        height: 202px;
+        border-radius: 20px;
+        border: 3px solid rgba(255, 255, 255, 0.5);
+    }
+
+
+    .medicon{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: rgba(196, 196, 196, 0.1);
+    }
+
+    .medicon >img{
+        width: 30px;
+        height: 30px;
+    }
+    
+        
+    .medHeader{
+        margin: 0;
+        display: block;
+        height: 36px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-family: Montserrat700;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+    }
+
+    .readGrey{
+        gap: 5px;
+        font-size: 14px;
+        line-height: 17px;
+        color:rgba(255, 255, 255, 0.5);
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* getVaccine */
+    .getVaccine{
+        padding: 35px 35px 41px 35px;
+        width: 100%;
+        height: 1095px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(./assets/4unsplash_Y4MKctPwIrw.png);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .getYour{
+        margin: 0;
+        margin: auto;
+        width: 230px;
+        height: 58px;
+        font-family: Montserrat700;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+    }
+    .formAndImg{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .formDiv{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imgd{
+        display: flex;
+        order: 1;
+    }
+
+    .vaccineImg{
+        width: 306px;
+        height: 437px;
+        margin-top: 20px;
+        margin-bottom: 38px;        
+    }
+    
+    .secondForm{
+        width: 100%;
+        display: flex;
+        order: 2;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .secondlabel{
+        font-family: Montserrat700;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+    }
+
+    .secondInput{
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: rgba(11, 21, 60, 0.15);
+    } 
+
+    
+    .secondInput::placeholder{
+        font-family: Montserrat500;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.25);
+    }
+  
+    .mobileLabel{
+        font-family: Montserrat700;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 0;
+    }
+    
+        
+    .getVaccinep{
+        margin: 0;
+        width: auto;
+        height: auto;
+        font-family: Montserrat500;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .inputnumberDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .mobinpdiv{
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        gap: 10px;
+        padding: 15px 20px;
+        align-items: center;
+        background-color: rgba(11, 21, 60, 0.15);
+    }
+
+    .mobileInput::placeholder{
+        font-family: Montserrat500;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.25);
+    }
+
+    .verify{
+        width: 150px;
+        height: 50px;
+        padding: 20px 70px 20px 70px;
+        border-radius: 10px;
+        gap: 10px;
+        font-family: Montserrat700;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: white;
+        background-color: rgba(23, 194, 236, 1);
+    }
+
+    .submitButton{    
+        width: 100%;
+        padding: 0;
+        margin-top: 40px;
+        height:  50px;
+        border-radius: 20px;
+        gap: 10px;
+        border: none;
+        color: white;
+        text-align: center;
+    
+        background-color: rgba(23, 194, 236, 1);
+    }
+
+    .alreadyReg{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content:  center;
+    }
+
+    .already{
+        font-family: Montserrat600;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .checkstatus{
+        font-family: Montserrat700;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(23, 194, 236, 1);
+    
+    }
+
+    .covid{
+        overflow: hidden;
+        width: 100%;
+        height: 346px;
+        background-size: cover;
+        background-image: url(./assets/unsplash_SfDofjXtxHE.png);
+    }
+
+    .prevention{
+        font-family: Montserrat700;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+        color: white;
+        padding-top: 25px;
+    }
+
+    .bigCovid{
+        margin: 0;
+        font-family: Montserrat800;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 10px;
+        color: white;
+    }
+    
+
+    .covidp{
+        margin: 0;
+        margin: auto;
+        margin-top: 10px;
+        width: 296px;
+        height: 58px;
+        font-family: Montserrat500;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .human{
+        margin: auto;
+        margin-top: 30px;
+        width: 223px;
+        height: 167px;  
+    }
+
+    .humanDiv{
+        position: relative;
+        display: flex; 
+    }
+
+
+    .coronaImg{
+        width: 31.5px;
+        height: 31.5px;
+        position: absolute;
+        left: -15px;
+        top: -4.8px;
+    }
+
+    .coronabox1{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }   
+
+     .virusDiv1{
+        position: relative;
+        margin-top: 37px;
+        margin-left: 60px;
+        width: 73px;
+        height: 22px;
+        display: flex;
+        justify-content: end;
+        padding-top: 5.5px;
+        padding-bottom: 5.5px;
+        border-radius: 5px;
+        align-items: center;
+        background-color:rgba(196, 196, 196, 0.2);   
+    }
+
+    .virusspan1{
+        width: 49px;
+        height: 11px;
+        margin-right: 8px;
+        font-family: Montserrat600;
+        font-size: 8.75px;
+        font-weight: 600;
+        line-height:11px;
+        letter-spacing: 0em;
+        text-align: end;
+        color: rgba(23, 194, 236, 1);
+    }
+  
+
+        
+    .virusDiv2{
+        position: relative;
+        margin-top: 37px;
+        margin-right: 28px;
+        width: 109px;
+        height: 22px;
+        display: flex;
+        justify-content: right;
+        padding-top: 5.5px;
+        padding-bottom: 5.5px;
+        border-radius: 5px;
+        background-color: rgba(196, 196, 196, 0.2);
+    }
+
+    .virusspan2{
+        margin-right: 6px;
+        font-family: Montserrat600;
+        font-size: 8px;
+        font-weight: 600;
+        line-height: 11px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(23, 194, 236, 1);
+    }
+
+
+        .coronabox2{
+        margin-top: 86px;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .virusDiv3{
+        position: relative;
+        margin-left: 43px;
+        width: 73px;
+        height: 22px;
+        display: flex;
+        justify-content: right;
+        padding-top: 5.5px;
+        padding-bottom: 5.5px;
+        border-radius: 5px;
+        background-color: rgba(196, 196, 196, 0.2);
+    }
+
+    .virusspan3{
+        margin-right: 9px;
+        font-family: Montserrat600;
+        font-size: 8px;
+        font-weight: 600;
+        line-height: 11px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(23, 194, 236, 1);
+
+    }
+
+    .virusDiv4{
+        position: relative;
+        margin-right: 13px;
+        width: 108px;
+        height: 22px;
+        display: flex;
+        justify-content: right;
+        padding-top: 5.5px;
+        padding-bottom: 5.5px;
+        border-radius: 5px; background-color: rgba(196, 196, 196, 0.2);
+    }
+
+    .virusspan4{
+        margin-right: 4px;
+        font-family: Montserrat600;
+        font-size: 8px;
+        font-weight: 600;
+        line-height: 11px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(23, 194, 236, 1);
+
+    }
+
+        .coronabox3{
+        margin-top: 131px;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .virusDiv5{
+        position: relative;
+        margin-left: 22px;
+        width: 109px;
+        height: 22px;
+        display: flex;
+        justify-content: right;
+        padding-top: 5.5px;
+        padding-bottom: 5.5px;
+        border-radius: 5px;
+        background-color: rgba(196, 196, 196, 0.2);
+    }
+
+    .virusspan5{
+        margin-right: 5px;
+        font-family: Montserrat600;
+        font-size: 8px;
+        font-weight: 600;
+        line-height: 11px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(23, 194, 236, 1);
+
+    }
+
+    .virusDiv6{
+        position: relative;
+        margin-right: 10px;
+        width: 82px;
+        height: 22px;
+        display: flex;
+        justify-content: right;
+        padding-top: 5.5px;
+        padding-bottom: 5.5px;
+        border-radius: 5px; background-color: rgba(196, 196, 196, 0.2);
+    }
+
+    .virusspan6{
+        margin-right: 4px;
+        font-family: Montserrat600;
+        font-size: 8px;
+        font-weight: 600;
+        line-height: 11px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(23, 194, 236, 1);
+    }
+
+
+    /* feedback */
+    .feedback{
+        width: 100%;
+        height: 859px;
+        background-size: cover;
+        background-image: url(./assets/5unsplash_Y4MKctPwIrw.png);   
+    }
+    .bg{
+        position: relative;
+        width: 100%;
+        height: 47px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .feedbackh{
+        margin: 0;
+        margin: auto;
+        padding-top: 30px;
+        font-family: Montserrat700;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(23, 194, 236, 1);
+    }
+
+    .patient{
+        font-family: Montserrat800;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .patientThink{
+        margin: 0;
+        margin: auto;
+        margin-top: 10px;
+        width: 248px;
+        height: 60px;
+        font-family: Montserrat500;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14.5px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .imgsDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .imgsDiv>img{
+        margin: auto;
+        width: 124px;
+        height: 202px;
+    }
+
+
+    .userDivs{
+        width: 100%;
+        position: absolute;
+        top: 182px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between; 
+        padding-left: 35px;
+        padding-right:35px ;
+    }
+
+    .userDiv1, .userDiv2{
+        padding: 23px 23px;
+        width: 100%;
+        height: 190px;
+        border-radius: 14px;
+        background-color: rgba(196, 196, 196, 0.5);
+    }
+
+    .userDiv2{
+        background-color: rgba(23, 194, 236, 1);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+
+    .userimgDig{
+        gap: 15px;
+    
+    }
+    .userimgDig>img{
+        width: 53px;
+        height: 53px;
+        border-radius: 14px;
+    }
+
+    .nameDiv{
+        gap: 4px;
+    }
+
+    .nameheader, .nameheader2{
+        margin: 0;
+        font-family: Montserrat700;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .locationFrom, .locationFrom2{
+        margin: 0;
+        font-family: Montserrat700;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.5);   
+    }
+
+    .locationFrom2{
+        color:rgba(255, 255, 255, 0.75);   
+
+    }
+
+    .userComment, .userComment2{
+        margin: 0;
+        margin-top: 30px;
+        font-family: Montserrat500;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .userComment2{
+        color:rgba(255, 255, 255, 0.75);
+
+    }
+
+    footer{
+        width: 100%;
+        height: 465px;
+        position: relative;
+        display: flex;
+        align-items: end;
+        }
+
+    .footerbgimg{    
+        justify-content: center;    
+        display: flex;
+
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 351px;
+        background-size: cover;
+        background-image: url(./assets/6unsplash_SfDofjXtxHE.png);
+
+    }
+
+
+    .quote{   
+        width: 305px;
+        height: 206px;
+        position: absolute;
+        margin: auto;
+        display: flex;
+        padding: 30px 13px;
+        margin-top: -114px;
+        border-radius: 20px;
+        background-color:rgba(196, 196, 196, 0.15);
+    }
+
+
+    .insidequote{
+        width: 280px;
+        height: 147px;
+        background-color: rgba(23, 194, 236, 1);
+        border-radius: 10px;
+    }
+
+    .quoteheader{
+        margin: 0;
+        margin-top: 16px;
+        font-family: Montserrat700;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: white;
+    }
+
+    .quoteP{
+        font-family: Montserrat500;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+        margin-top: 5px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .inputquote{
+        width: 233px;
+        height: 40px;
+        display: flex;
+        margin: auto;
+        margin-top: 40px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .quoteinp{
+        width: 175px;
+        height: 40px;
+        text-align: left;
+        padding: 15px 13px;
+        margin: 0;
+        outline: none;
+        border-radius: 20px 0 0 20px;
+        background-color: white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+        font-family: Montserrat500;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.25);
+    }
+
+    .quoteicon{
+        width: 58px;
+        height: 40px;
+        display: flex;    
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 20px 20px 0;
+        background-color: rgba(11, 21, 60, 1);
+    }
+
+
+    .quoteicon>img{
+        width: 24px;
+        height: 20px;
+    }
+
+
+    .footerContent{
+        position: absolute;
+        padding-left: 35px;
+        padding-right: 35px;
+        width: 100%;
+        height: 187;
+        margin-top: 133px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .footerNav{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 98px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .footerNav>a{
+        height: 17px;    
+        font-family: Montserrat500;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+
+    .footerNav .active2{
+        font-weight: 700;
+        color: white;
+    }
+    .socmedia{
+        gap: 4px;
+    }
+
+    .socmedia>img{
+        width: 18px;
+        height: 18px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
